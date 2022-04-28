@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'BlockKnowledge_Example' do
+  pod 'BlockKnowledge', :path => '../'
+
+  target 'BlockKnowledge_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
