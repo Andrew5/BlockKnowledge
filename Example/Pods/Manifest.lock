@@ -1,0 +1,27 @@
+PODS:
+  - BlockKnowledge (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - BlockKnowledge (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  BlockKnowledge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlockKnowledge: f6fd6af03a9274da678fe17eba967c5d5d5e964a
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 90a3dd1618c620bc840fe87445c076784397fe08
+
+COCOAPODS: 1.11.3
