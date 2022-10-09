@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14EFFEC63AB54414312C5FFF /* BlockKnowledge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BlockKnowledge.podspec; path = ../BlockKnowledge.podspec; sourceTree = "<group>"; };
+		14EFFEC63AB54414312C5FFF /* BlockKnowledge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BlockKnowledge.podspec; path = ../BlockKnowledge.podspec; sourceTree = "<group>"; };
 		2580565381C9757FE9CDFEAD /* Pods_BlockKnowledge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockKnowledge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* BlockKnowledge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockKnowledge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,9 +64,9 @@
 		9352930F4DA0197CB0F6FD9A /* Pods_BlockKnowledge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockKnowledge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA77C3CC56401D5DF833CC /* Pods-BlockKnowledge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockKnowledge_Example.debug.xcconfig"; path = "Target Support Files/Pods-BlockKnowledge_Example/Pods-BlockKnowledge_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5AFA966924BDC9E515E1C32 /* Pods-BlockKnowledge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockKnowledge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BlockKnowledge_Tests/Pods-BlockKnowledge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE7E7E5F6FF64D9F6ED9573F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DE7E7E5F6FF64D9F6ED9573F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DF938389A7B13EBD5A8D9D47 /* Pods-BlockKnowledge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockKnowledge_Example.release.xcconfig"; path = "Target Support Files/Pods-BlockKnowledge_Example/Pods-BlockKnowledge_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E8FDDFE5DE52AC0CFC3A0533 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E8FDDFE5DE52AC0CFC3A0533 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				D5AFA966924BDC9E515E1C32 /* Pods-BlockKnowledge_Tests.debug.xcconfig */,
 				7F8779575E86708CE360A069 /* Pods-BlockKnowledge_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,6 +513,7 @@
 			baseConfigurationReference = A9FA77C3CC56401D5DF833CC /* Pods-BlockKnowledge_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlockKnowledge/BlockKnowledge-Prefix.pch";
 				INFOPLIST_FILE = "BlockKnowledge/BlockKnowledge-Info.plist";
@@ -529,6 +530,7 @@
 			baseConfigurationReference = DF938389A7B13EBD5A8D9D47 /* Pods-BlockKnowledge_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlockKnowledge/BlockKnowledge-Prefix.pch";
 				INFOPLIST_FILE = "BlockKnowledge/BlockKnowledge-Info.plist";
