@@ -1499,15 +1499,15 @@ typedef void (^blockSave)(void);
 }
 
 - (void)test15{
-    //    __block UIImage *image;
-    //    dispatch_sync_on_main_queue(^{
-    //        image = [UIImage imageNamed:@"Resource/img"];
-    //    });
+
     newDescription(self, @selector(methof));
     
 }
 - (void)methof {
-    
+    __block UIImage *image;
+    dispatch_sync_on_main_queue(^{
+        image = [UIImage imageNamed:@"Resource/img"];
+    });
 }
 //YYKit中提供了一个同步扔任务到主线程的安全方法：
 static inline void dispatch_sync_on_main_queue(void (^block)(void)) {
