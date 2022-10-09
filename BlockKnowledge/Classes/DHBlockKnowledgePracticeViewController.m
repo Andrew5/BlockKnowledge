@@ -1503,8 +1503,12 @@ typedef void (^blockSave)(void);
     //    dispatch_sync_on_main_queue(^{
     //        image = [UIImage imageNamed:@"Resource/img"];
     //    });
+    newDescription(self, @selector(methof));
+    
 }
-
+- (void)methof {
+    
+}
 //YYKit中提供了一个同步扔任务到主线程的安全方法：
 static inline void dispatch_sync_on_main_queue(void (^block)(void)) {
     NSLog(@"1、执行");
@@ -1518,6 +1522,8 @@ static inline void dispatch_sync_on_main_queue(void (^block)(void)) {
         });
         NSLog(@"3、执行");
 };
+
+//TODO: 函数
 NSString *(*oldDescription)(id self, SEL _cmd);
 // implicit self and _cmd are explicit with IMP ABI
 NSString *newDescription(id self, SEL _cmd) {
@@ -1759,6 +1765,21 @@ NSString* (^intToString)(NSUInteger) = ^(NSUInteger paramInteger){
     NSString *result = [NSString stringWithFormat:@"%lu",(unsigned long)paramInteger];
     return result;
 };
+
+//FIXME: 在static void (^resultDate())(NSDate *, NSString *) {return ^(NSDate *selectDate, NSString *selectValue) {内部使用self
+//self.resultBlockTest = resultDate();
+//}
+////- (NSString *(^)(NSString *))travelWith:(NSDate *, NSString *)date {
+////    return ^(NSDate *selectDate, NSString *selectValue) {
+////
+////    };
+////}
+//NSString* (^resultDate)() = ^(NSDate *, NSString *){
+//
+//NSString *result = NSString.string;
+//return result;
+//};
+
 //链式调用方法
 //后面带括号，说明方法的返回值是一个Block。
 //调用方法肯定是对象才可以进行调用，说明Block的返回值是一个对象。
