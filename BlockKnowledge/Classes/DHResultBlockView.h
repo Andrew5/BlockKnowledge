@@ -10,7 +10,7 @@
 #import "DHResultBlockView.h"
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void (^ResultBlock)(NSString * _Nullable selectValue);
+typedef void (^ResultBlock)(NSDate * _Nullable selectDate,NSString * _Nullable selectValue);
 
 @interface DHResultBlockView : UIView
 @property (nullable, nonatomic, copy) ResultBlock resultBlock;

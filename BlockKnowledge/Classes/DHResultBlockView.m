@@ -30,7 +30,7 @@
 }
 - (void)test {
     if (self.resultBlock) {
-        self.resultBlock(@"测试");
+        self.resultBlock([NSDate date],@"测试");
     }
 }
 /*
